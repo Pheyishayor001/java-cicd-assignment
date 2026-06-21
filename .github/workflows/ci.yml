@@ -15,7 +15,7 @@ name: CI
 # can't protect the main branch.
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build-and-test:
