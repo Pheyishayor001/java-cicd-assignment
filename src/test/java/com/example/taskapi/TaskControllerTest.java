@@ -14,6 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @WebMvcTest(TaskController.class)
 @Import(TaskService.class)
+@DirtiesContext(classMode = ClassMode.BEFORE_EACH_TEST_METHOD)
 class TaskControllerTest {
 
     @Autowired
